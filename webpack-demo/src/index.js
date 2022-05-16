@@ -1,14 +1,18 @@
-import _ from "lodash";
+import _ from 'lodash';
+import printMe from './print.js';
 
+ function component() {
+   const element = document.createElement('div');
+  const btn = document.createElement('button');
 
-// json file are available without any module addition only with default export though
+   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-function component() {
-  const element = document.createElement("div");
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = printMe;
 
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+  element.appendChild(btn);
 
-  return element;
-}
+   return element;
+ }
 
-document.body.appendChild(component());
+ document.body.appendChild(component());
