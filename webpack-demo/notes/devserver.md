@@ -2,6 +2,12 @@
 
 There is multiple options to make development easier using Webpack.
 
+{% note %}
+
+**Note:** I highly recommend to add source maps **in development** as it helps to find location of errors. if you want to learn more about source-maps check [wepback docs](https://webpack.js.org/guides/development/#using-source-maps)
+
+{% endnote %}
+
 ## Overview : 
 | Options        | Recommanded for           | 
 | ------------- |-------------:| 
